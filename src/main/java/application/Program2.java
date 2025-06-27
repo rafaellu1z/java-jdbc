@@ -13,5 +13,9 @@ public class Program2 {
         System.out.println("=== TEST 1: department findById ===");
         Department department = departmentDao.findById(3);
         System.out.println(department);
+
+        System.out.println();
+        System.out.println("=== TEST 2: department findAll ===");
+        departmentDao.findAll().forEach(System.out::println);
     }
 }
